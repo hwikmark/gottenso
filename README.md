@@ -10,6 +10,8 @@ The data is read and stored as .CSV files, which are human-readable and easily m
 
 Sharing the data / plots with others requires a web server such as [gunicorn](https://gunicorn.org/), which can quite easily be installed and run on your own server or a VPS. Note that you probably want to set up HTTPS and possibly other security measures in order not to distribute personal information everywhere (there are tutorials online for these things).
 
+___Very___ __important note and disclaimer:__ The code in this repo provides no means of backup. Back up your data if you want to keep it!
+
 ### GUI and instructions
 
 ![The common interface featuring plot and plotting options](assets/family_interface.png)
@@ -68,7 +70,7 @@ The app will read settings from environment variables, or from a .env file if th
 
 ### Todo / outlook
 Some ideas for improvement and added features:
-- More translations
+- More translations and localizations (e.g. locale-specific date formats)
 - Plot multiple kids
 - Other measurement systems such as imperial
 - File downloads(?)

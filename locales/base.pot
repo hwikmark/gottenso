@@ -1,0 +1,127 @@
+# Translations template for PROJECT.
+# Copyright (C) 2021 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2021-05-08 17:38+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../knut/app.py:88 ../knut/app.py:89 ../knut/app.py:460 ../knut/app.py:462
+msgid "Age"
+msgstr ""
+
+#: ../knut/app.py:88 ../knut/app.py:460
+msgid "days"
+msgstr ""
+
+#: ../knut/app.py:89 ../knut/app.py:462
+msgid "years"
+msgstr ""
+
+#: ../knut/app.py:90 ../knut/app.py:91 ../knut/app.py:181 ../knut/app.py:464
+#: ../knut/app.py:466
+msgid "Weight"
+msgstr ""
+
+#: ../knut/app.py:92
+msgid "Date"
+msgstr ""
+
+#: ../knut/app.py:124 ../knut/app.py:125 ../knut/app.py:126 ../knut/app.py:128
+#: ../knut/app.py:130
+msgid "Plot"
+msgstr ""
+
+#: ../knut/app.py:124 ../knut/app.py:304 ../knut/app.py:411 ../knut/app.py:438
+msgid "weight"
+msgstr ""
+
+#: ../knut/app.py:125 ../knut/app.py:318 ../knut/app.py:421 ../knut/app.py:448
+msgid "height"
+msgstr ""
+
+#: ../knut/app.py:126
+msgid "growth curves"
+msgstr ""
+
+#: ../knut/app.py:126 ../knut/app.py:129 ../knut/app.py:131
+msgid " (ERROR: not found!)"
+msgstr ""
+
+#: ../knut/app.py:129 ../knut/app.py:131
+msgid "for comparison"
+msgstr ""
+
+#: ../knut/app.py:132
+msgid "Zoom in around"
+msgstr ""
+
+#: ../knut/app.py:138
+msgid "Weight scale:"
+msgstr ""
+
+#: ../knut/app.py:142
+msgid "Grams"
+msgstr ""
+
+#: ../knut/app.py:143
+msgid "Kilograms"
+msgstr ""
+
+#: ../knut/app.py:147
+msgid "Age scale:"
+msgstr ""
+
+#: ../knut/app.py:150
+msgid "Days"
+msgstr ""
+
+#: ../knut/app.py:151
+msgid "Years"
+msgstr ""
+
+#: ../knut/app.py:172
+msgid "Add data point"
+msgstr ""
+
+#: ../knut/app.py:189 ../knut/app.py:293 ../knut/app.py:467
+msgid "Height"
+msgstr ""
+
+#: ../knut/app.py:197
+msgid "Head circumference"
+msgstr ""
+
+#: ../knut/app.py:206
+msgid "Comment"
+msgstr ""
+
+#: ../knut/app.py:215
+msgid "Submit"
+msgstr ""
+
+#: ../knut/app.py:338 ../knut/app.py:347 ../knut/app.py:352 ../knut/app.py:359
+#: ../knut/app.py:364
+msgid "Average weight"
+msgstr ""
+
+#: ../knut/app.py:371 ../knut/app.py:379 ../knut/app.py:384 ../knut/app.py:391
+#: ../knut/app.py:396
+msgid "Average height"
+msgstr ""
+
+#: ../knut/app.py:457
+msgid "'s development"
+msgstr ""
+

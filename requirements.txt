@@ -1,0 +1,10 @@
+numpy
+pandas
+flask
+plotly
+dash
+dash_core_components
+dash_html_components
+dash_auth
+python-dotenv
+python-decouple

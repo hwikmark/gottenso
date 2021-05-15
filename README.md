@@ -16,7 +16,7 @@ ___Very___ __important note and disclaimer:__ The code in this repo provides no 
 
 ![The common interface featuring plot and plotting options](assets/family_interface.png)
 
-The first image shows the common interface for both the `parent` and `family` users. The plot will show the height and weight over time for your child along with data for the parents and standard growth curves (if available). Hovering over a point will give some more detailed data along with a comment if there is one.
+The first image shows the common interface for both the `parent` and `family` users. The plot will show the height and weight over time for your child along with data for the parents and standard growth curves (if available). Hovering over a point will give some more detailed data along with a comment if there is one. You can choose whether to plot standard growth curves as well as data for one or both parents. If an option is followed by (ERROR: not found!) this means the filename may not be properly set (see the section on environmental variables).
 
 ![The parent data entry form](assets/parent_interface.png)
 

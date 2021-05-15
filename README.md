@@ -73,11 +73,16 @@ Some ideas for improvement and added features:
 - Other measurement systems such as imperial
 - File downloads(?)
 
+Improvements to the codebase / app:
+- Testing
+- Cleanup
+- Layout
+
 ### Credits and acknowledgements
 Made in 2020-2021 by Hampus Wikmark Kreuger.
 
 gottenso uses [Dash](http://dash.plotly.com/),
 [Numpy](https://numpy.org/),
-[Pandas](https://pandas.pydata.org/), and
+[Pandas](https://pandas.pydata.org/), [Python-decouple](https://github.com/henriquebastos/python-decouple/), and
 [Python-dotenv](https://github.com/theskumar/python-dotenv) along with core Python libraries. CSS layout by [chriddyp](https://codepen.io/chriddyp) /
 [Dave Gamache](https://github.com/dhg).

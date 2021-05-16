@@ -60,3 +60,22 @@ class TestLoadDataFiles:
     def test_wrong_file(self):
         fn = 'completely_stupid_wrong_name.sit'
         assert app.load_datafile(fn) == None
+
+
+class TestCalcAge():
+
+    def test_days(self):
+        assert app.calc_age(39,disp='days') == 39
+    
+    def test_years(self):
+        assert app.calc_age(39,disp='years') == pytest.approx(39/365.25)
+        
+
+class TestCalcWeight():
+
+    def test_days(self):
+        assert app.calc_weight(3900,disp='g') == 3900
+    
+    def test_years(self):
+        assert app.calc_weight(3900,disp='kg') == pytest.approx(3.9)
+        

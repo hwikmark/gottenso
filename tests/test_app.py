@@ -4,6 +4,7 @@ import app
 import pandas as pd
 import io
 
+
 class TestLoadDataFiles:
     def test_load_good_data(self):
         good_data = """,Age,Height,Weight
@@ -27,7 +28,7 @@ class TestLoadDataFiles:
         loaded_data = app.load_datafile(io.StringIO(m_data))
         good_df = pd.read_csv(io.StringIO(good_data))
         pd.testing.assert_frame_equal(loaded_data, good_df,
-            check_dtype=False)
+                                      check_dtype=False)
 
     def test_load_kg_data(self):
         kg_data = """,Age,Height,Weight
@@ -41,7 +42,7 @@ class TestLoadDataFiles:
         loaded_data = app.load_datafile(io.StringIO(kg_data))
         good_df = pd.read_csv(io.StringIO(good_data))
         pd.testing.assert_frame_equal(loaded_data, good_df,
-            check_dtype=False)
+                                      check_dtype=False)
 
     def test_load_sd_data(self):
         kg_data = """,Age,Height,Weight,sd_ht,sd_wt
@@ -55,27 +56,26 @@ class TestLoadDataFiles:
         loaded_data = app.load_datafile(io.StringIO(kg_data))
         good_df = pd.read_csv(io.StringIO(good_data))
         pd.testing.assert_frame_equal(loaded_data, good_df,
-            check_dtype=False)
+                                      check_dtype=False)
 
     def test_wrong_file(self):
         fn = 'completely_stupid_wrong_name.sit'
-        assert app.load_datafile(fn) == None
+        assert app.load_datafile(fn) is None
 
 
 class TestCalcAge():
 
     def test_days(self):
-        assert app.calc_age(39,disp='days') == 39
-    
+        assert app.calc_age(39, disp='days') == 39
+
     def test_years(self):
-        assert app.calc_age(39,disp='years') == pytest.approx(39/365.25)
-        
+        assert app.calc_age(39, disp='years') == pytest.approx(39 / 365.25)
+
 
 class TestCalcWeight():
 
     def test_days(self):
-        assert app.calc_weight(3900,disp='g') == 3900
-    
+        assert app.calc_weight(3900, disp='g') == 3900
+
     def test_years(self):
-        assert app.calc_weight(3900,disp='kg') == pytest.approx(3.9)
-        
+        assert app.calc_weight(3900, disp='kg') == pytest.approx(3.9)

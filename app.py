@@ -8,7 +8,6 @@ import os
 import dash_core_components as dcc
 import dash_html_components as html
 import dash_auth
-import plotly.express as px
 import pandas as pd
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots

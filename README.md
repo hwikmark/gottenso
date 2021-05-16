@@ -1,5 +1,7 @@
 # gottenso 👶📈
 
+[![Build Status](https://travis-ci.com/hwikmark/gottenso.svg?token=MqfdQ8NG96W4hdjM1cGH&branch=main)](https://travis-ci.com/hwikmark/gottenso)
+
 ### Introduction
 
 __gottenso__ is a dashboard for keeping and displaying records of a child's height and weight as a function of age.

@@ -59,6 +59,8 @@ The app will read settings from environment variables, or from a .env file if th
 - **HEADCOL:** Head circumference in cm.
 - **HEIGHTCOL:** Height in cm.
 - **WEIGHTCOL:** Weight in grams.
+- **SDHTCOL:** SD for height in cm.
+- **SDWTCOL:** SD for weight in grams.
 #### Misc data
 - **CHILDBDAY:** Child's birthday (used to display dates).
 - **CHILDNAME:** Child's name.
@@ -76,9 +78,9 @@ Some ideas for improvement and added features:
 - File downloads(?)
 
 Improvements to the codebase / app:
-- Testing
-- Cleanup
-- Layout
+- Improved testing and CI
+- Code cleanup
+- App layout
 
 ### Credits and acknowledgements
 Made in 2020-2021 by Hampus Wikmark Kreuger.

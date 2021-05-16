@@ -42,6 +42,8 @@ def load_datafile(filename):
                 raw_data[sd_wt_col] *= 1000
         if max(raw_data[heightcol]) < 5:
             raw_data[heightcol] *= 100
+            if sd_ht_col in raw_data:
+                raw_data[sd_ht_col] *= 100
     except FileNotFoundError:
         raw_data = None
     return raw_data

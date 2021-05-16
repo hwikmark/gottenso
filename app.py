@@ -143,15 +143,18 @@ app.layout = html.Div(children=[
                 {'label': _("Plot") + ' ' + _("weight"), 'value': 'show_wt'},
                 {'label': _("Plot") + ' ' + _("height"), 'value': 'show_ht'},
                 {'label': _("Plot") + ' ' + _("growth curves") + (
-                    _(' (ERROR: not found!)') if not np.any(gro_raw_data) else ''),
+                    _(' (ERROR: not found!)')
+                    if not np.any(gro_raw_data) else ''),
                  'value': 'gro_curves'},
                 {'label': _("Plot") + ' ' + p1name + ' ' +
                  _("for comparison") + (
-                    _(' (ERROR: not found!)') if not np.any(p1_raw_data) else ''),
+                    _(' (ERROR: not found!)')
+                    if not np.any(p1_raw_data) else ''),
                  'value': 'showp1'},
                 {'label': _("Plot") + ' ' + p2name + ' ' +
                  _("for comparison") + (
-                    _(' (ERROR: not found!)') if not np.any(p2_raw_data) else ''),
+                    _(' (ERROR: not found!)')
+                    if not np.any(p2_raw_data) else ''),
                  'value': 'showp2'},
                 {'label': _("Zoom in around") + ' ' + cname, 'value': 'zoom'}],
             value=['show_ht', 'show_wt', 'showp1', 'showp2', 'zoom'],
@@ -167,7 +170,7 @@ app.layout = html.Div(children=[
                               {'label': _('Kilograms'), 'value': 'kg'}],
                      value='g',
                      style={'width': '100px', 'display': 'inline-block',
-                     'top': '15px'}),
+                            'top': '15px'}),
         html.Div(),
         html.Label(_("Age scale:"), style={'display': 'inline-block'}),
         html.Div(style={'display': 'inline-block', 'width': '10px'}),
@@ -176,7 +179,7 @@ app.layout = html.Div(children=[
                               {'label': _('Years'), 'value': 'years'}],
                      value='days',
                      style={'width': '100px', 'display': 'inline-block',
-                     'top': '15px'})
+                            'top': '15px'})
     ], style={'columns': 2, 'margin-right': 'auto',
               'margin-left': 'auto', 'width': '600px'}),
     html.Div(id='input-form'),
@@ -203,7 +206,8 @@ def make_inputs(check):
                 date=dt.date.today(),
                 style={'display': 'inline-block'}),
             html.Div(style={'display': 'inline-block', 'width': '10px'}),
-            html.Label(_('Weight') + ' (g):', style={'display': 'inline-block'}),
+            html.Label(_('Weight') + ' (g):',
+                       style={'display': 'inline-block'}),
             html.Div(style={'display': 'inline-block', 'width': '5px'}),
             dcc.Input(
                 id='new_weight',
@@ -211,7 +215,8 @@ def make_inputs(check):
                     'display': 'inline-block',
                     'width': '100px'}),
             html.Div(style={'display': 'inline-block', 'width': '10px'}),
-            html.Label(_('Height') + ' (cm):', style={'display': 'inline-block'}),
+            html.Label(_('Height') + ' (cm):',
+                       style={'display': 'inline-block'}),
             html.Div(style={'display': 'inline-block', 'width': '5px'}),
             dcc.Input(
                 id='new_height',
@@ -259,7 +264,7 @@ def make_inputs(check):
      State('new_head', 'value'),
      State('new_comment', 'value')])
 def new_datapoint(clicks, old_clicks, sel_date, new_weight, new_height,
-                 new_head, new_comment, suppress_callback_exceptions=True):
+                  new_head, new_comment, suppress_callback_exceptions=True):
     c_data = pd.read_csv(cfile)
     sel_date = dt.date.fromisoformat(sel_date)
     old_clicks = int(old_clicks)

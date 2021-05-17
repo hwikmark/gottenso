@@ -51,17 +51,17 @@ def load_datafile(filename):
 def calc_age(days, disp='days'):
     """Used for plotting to set the X-scale."""
     if disp == 'days':
-        return(days)
+        return days
     else:
-        return(days / 365.25)
+        return days / 365.25
 
 
 def calc_weight(gram, disp='g'):
     """Used to set the plotting weight axis."""
     if disp == 'g':
-        return(gram)
+        return gram
     else:
-        return(gram / 1000)
+        return gram / 1000
 
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
@@ -251,7 +251,7 @@ def make_inputs(check):
                   'margin-left': 'auto', 'max-width': '1100px'})
     else:
         input_form = ''
-    return(input_form)
+    return input_form
 
 
 @app.callback(
@@ -298,7 +298,7 @@ def new_datapoint(clicks, old_clicks, sel_date, new_weight, new_height,
         c_data.to_csv(cfile, index=False)
     else:
         pass
-    return(clicks)
+    return clicks
 
 
 @app.callback(
@@ -609,7 +609,7 @@ def update_figure(checkbox, num_clicks, weight_pref, age_pref,
             "<b>" + _("Height") + "</b> (cm)"),
         secondary_y=True)
     fig.update_layout(transition_duration=500)
-    return(fig)
+    return fig
 
 
 if __name__ == '__main__':

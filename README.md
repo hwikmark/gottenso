@@ -37,7 +37,7 @@ When this is done, navigate to <http://127.0.0.1:8050/>!
 
 ### Where do I get growth curves?
 As I'm not sure about the legal implications of including the curves in the repo, I would suggest you get them from e.g. [the WHO](https://www.who.int/tools/child-growth-standards/standards) or use national statistics:
-- Sweden: The data is available in Albertsson Wikland et al, _Acta Pediatrica_, [DOI:10.1080/08035250213216](doi.org/10.1080/08035250213216).
+- Sweden: The data is available in Albertsson Wikland et al, _Acta Pediatrica_, [DOI:10.1080/08035250213216](https://doi.org/10.1080/08035250213216).
 - USA: You can get data from [the CDC](https://www.cdc.gov/growthcharts).
 
 ### Environment variables
